@@ -1,0 +1,171 @@
+.main_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+  }
+  
+  .main_container > a {
+    text-decoration: none;
+  }
+  
+  .main_container > a > span > .home_icon {
+    margin-left: 10vmax;
+    color: rgb(226, 64, 5);
+    padding: 5px 10px;
+    font: 600 2vmax "Roboto";
+  }
+  
+  .menu_button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .right_container {
+    display: flex;
+    align-items: center;
+    margin-right: 10vmax;
+  }
+  
+  .right_container.show_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    border-radius: 8px;
+    width: 250px;
+    z-index: 10;
+    transition: transform 0.3s  ease-in-out;
+  }
+  
+  .right_items {
+    display: flex;
+    align-items: center;
+  }
+  
+  .right_items > a {
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  .right_items > a > div {
+    margin-left: 20px;
+    font: 500 1.2vmax "Roboto";
+    color: black;
+    padding: 10px 15px;
+    width: 100%;
+  }
+  
+  .authentication {
+    display: flex;
+    
+    justify-content: flex-start;
+    
+  }
+  
+  .authentication > a {
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .authentication > a > div {
+    background-color: orangered;
+    margin-left: 5px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color:white;
+    font: 400 1.2vmax "Roboto";
+width: 100%;
+text-align: center;
+margin-bottom: 10px;
+  }
+  
+ 
+  
+  
+  /* Mobile View (max-width: 600px) */
+  @media screen and (max-width: 600px) {
+    .main_container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 5px 20px;
+    }
+
+  .main_container > a > span > .home_icon {
+    margin-left: 2vmax;
+    
+    padding: 5px 10px;
+    font: 600 3vmax "Roboto";
+   
+  }
+  
+    .menu_button {
+      display: block;
+      margin-right: 20px;
+    }
+  
+    .right_container {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: white;
+      padding: 10px;
+      width: 100%;
+      z-index: 10;
+    }
+.right_container.show_menu{
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+  
+    .right_items {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .right_items > a > div {
+      margin-right: 0;
+      margin-bottom: 10px;
+      font-size: 1.5vmax;
+      border-bottom: 1px solid #eaeaea;
+    }
+  
+    .authentication {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+     
+    }
+  
+    .authentication > a > div {
+      font-size: 1.5vmax;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      
+ 
+   
+    }
+    .todo_do>a>div{
+        background-color: rgb(222, 220, 219);
+         margin-top: 5px;
+         margin-left: 10px;
+        
+         
+    }
+    
+  }
+  
