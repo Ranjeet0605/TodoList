@@ -18,11 +18,6 @@ const Update = ({closeupdate,update}) => {
           setInputs({...inputs,[name]:value});
     }
 
-
-
-
-    
-
   const updateHandler = async()=>{
       
     // http://localhost:4000/
