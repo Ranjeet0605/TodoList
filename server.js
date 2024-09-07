@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-const auth =  require("../backend/routes/auth");
-const list = require("../backend/routes/list");
+const auth =  require("./routes/auth");
+const list = require("./routes/list");
 const cors = require("cors")
 const path = require("path");
 require("./Database/database");
